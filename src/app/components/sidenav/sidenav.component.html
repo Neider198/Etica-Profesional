@@ -1,0 +1,40 @@
+<app-header [sidenav]="sidenav"></app-header>
+<mat-sidenav-container >
+  <mat-sidenav #sidenav mode="side" opened  >
+    <mat-nav-list  >
+      <div >
+        <mat-list-item  color="primary" 
+                        routerLink="/inicio"> 
+          <mat-icon color="primary">stars</mat-icon> INICIO 
+        </mat-list-item>
+        <mat-list-item  color="primary" 
+                        routerLink="/contenido"> 
+          <mat-icon color="primary">stars</mat-icon> CONTENIDO ASIGNATURA  
+        </mat-list-item>
+        <mat-list-item  color="primary" 
+                        routerLink="/etica-de-lo-publico"> 
+          <mat-icon color="primary">stars</mat-icon> ETICA DE LO PUBLICO  
+        </mat-list-item>
+        <mat-list-item  color="primary" 
+                        routerLink="etica-profesional"> 
+          <mat-icon color="primary">stars</mat-icon> ETICA PROFESIONAL  
+        </mat-list-item>
+        <mat-list-item  color="primary" 
+                        routerLink="etica-informatica"> 
+          <mat-icon color="primary">stars</mat-icon> ETICA INFORMATICA  
+        </mat-list-item>
+        <mat-list-item  color="primary" 
+                        routerLink="foros-participativos"> 
+          <mat-icon color="primary">stars</mat-icon> FOROS PARTICIPATIVOS
+        </mat-list-item>
+      </div>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-card>
+      <router-outlet></router-outlet>
+    </mat-card>
+    <app-footer ></app-footer>
+    <br>
+  </mat-sidenav-content>
+</mat-sidenav-container>
